@@ -14,7 +14,7 @@ while True:
 
 print(f"Excellent! The right answer was {correct_number}. It took you {guess_count} guesses.")
 
----------------------------------------------------------------------------------------------------------
+
 import random
 import time
 
