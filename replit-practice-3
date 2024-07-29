@@ -1,0 +1,6 @@
+def double(number): 
+ return number * 2
+
+new_number = double(5)
+
+print(new_number)
