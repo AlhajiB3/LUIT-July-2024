@@ -11,3 +11,6 @@ This will be the day, this will be the day when all of God’s children will be 
 """
 
 print(text)
+
+print(len(text.split()))
+# This will provide the amount of text in this speech
