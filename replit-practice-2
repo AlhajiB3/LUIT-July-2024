@@ -1,0 +1,15 @@
+Football_Positions = {"QB":3, "WR":4, "RB":4, "TE":4, "K":1, "OL":8,}
+#Create a function called Football Positions with the the different positions and list the # of players in that position
+
+Football_Positions ["FS"] = 3
+# Add one more to position by listing the position and equaling the amount of players listed in that psoition
+
+Football_Positions ["LB"] = 4
+
+# Add another position and list the position. Equale the amount of players listed in that psoition
+
+del(Football_Positions["K"])
+# Delete one position by adding the the delete function plus the Football positions function and add the position with quotes listes
+
+print(Football_Positions)
+# print out the outcome
