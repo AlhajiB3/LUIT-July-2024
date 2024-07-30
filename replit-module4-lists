@@ -1,0 +1,26 @@
+city_1 = 'Annandale'
+city_2 = 'Arlington'
+city_3 = 'Alexandria'
+city_4 = 'Fairfax'
+city_5 = 'Falls Church'
+
+top_cities = ['Annandale' , 'Arlington' , 'Alexandria' , 'Fairfax' , 'Falls Church']
+print(top_cities)
+
+print(top_cities[0])
+
+print(top_cities[3])
+
+print(top_cities[-1])
+
+print(top_cities[-3])
+
+print(top_cities[0:4])
+
+print(top_cities[:])
+
+top_city = 'Annandale'
+
+top_cities = []
+
+print(top_cities[0])
