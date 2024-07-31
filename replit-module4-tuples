@@ -1,0 +1,16 @@
+empty_tuples = ()
+
+one_el_tuples = (1,)
+
+one_el_tuples_b = 1.
+
+three_el_tuples = 1, 2, 3
+
+print(three_el_tuples)
+
+
+user_data = ('John', 'Smith', 'Boxer', 'Male')
+
+user_data = ('Katya', 'Ivanova', 'Boxer', 'Female')
+
+print(user_data)
