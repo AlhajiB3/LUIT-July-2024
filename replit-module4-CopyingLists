@@ -1,0 +1,12 @@
+name_orginal = 'Jon Snow'
+name_new = name_orginal
+name_orginal = 'Daejon Snow'
+print(name_orginal, name_new)
+
+
+list_orginal = [1, 2, 3, 4, 5]
+
+list_new = list_orginal[:2]
+list_orginal[0] = -5
+print('Orginial:', list_orginal, '\nNew:', list_new)
+

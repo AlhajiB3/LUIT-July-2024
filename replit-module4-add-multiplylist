@@ -1,0 +1,10 @@
+list_us = ['New York', 'Boston', 'Chicago', 'Los Angeles', 'Seattle']
+
+list_uk = ['London', 'Liverpool', 'Manchester', 'Birmingham', 'London']
+
+list_all = list_us = list_uk
+print(list_all)
+
+
+list_numbers = [0,1] * 10
+print(list_numbers)

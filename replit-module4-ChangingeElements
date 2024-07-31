@@ -1,0 +1,15 @@
+first = input('Enter first number: ')
+second = input('Enter second number: ')
+
+print('Before swapping:', first, second)
+
+first = second
+
+second = first
+
+print('After swapping:', first, second)
+
+random_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+random_numbers.sort()
+print(random_numbers)
+

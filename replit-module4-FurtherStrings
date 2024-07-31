@@ -1,0 +1,14 @@
+print(fav_band[6])
+
+print(fav_band[:6])
+
+text = 'please capitlise me'
+
+text_cap = text.upper()
+print(text_cap)
+
+user_number = input('Please provide a number: ')
+if user_number.isnumeric():
+  print('Thank you for providing a number')
+else:
+  print('Sorry', user_number , 'that is not a number')

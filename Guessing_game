@@ -1,0 +1,35 @@
+correct_number = 5  # Set the correct number here
+guess_count = 0  # Initialize guess count to 0
+
+while True:
+    guess = int(input("What is your guess?: "))
+    guess_count += 1
+
+    if guess < correct_number:
+        print("Wrong. You need to guess higher.")
+    elif guess > correct_number:
+        print("Wrong. You need to guess lower.")
+    else:
+        break  # Exit the loop when guess equals correct_number
+
+print(f"Excellent! The right answer was {correct_number}. It took you {guess_count} guesses.")
+
+
+import random
+import time
+
+print("Hi! Welcome to the guessing game. I am going to pick a number between 1 and 25.")
+time.sleep(3)
+print("Picking a number...")
+correct_number = random.randint(1, 25)
+guess = int(input("What is your guess?: "))
+guess_count = 1
+time.sleep(3)
+while guess != correct_number:
+    guess_count += 1
+    if guess < correct_number:
+        guess = int(input("Wrong. You need to guess higher. What is your guess?: "))
+    else:
+        guess = int(input("Wrong. You need to guess lower. What is your guess?: "))
+
+print(f"Congratulations! You guessed the correct number {correct_number} in {guess_count} attempts.")

@@ -1,0 +1,9 @@
+for char in 'Alhaji Bah':
+  print(char)
+
+invited_guests = ['Alhaji Bah', 'Mohammed Bah', 'Kadi Sillah Bah']
+name = input('What is your name?' )
+if name in invited_guests:
+  print('You are invited')
+else:
+  print('You are not invited')

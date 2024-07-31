@@ -1,0 +1,8 @@
+top_cities = ['Annandale' , 'Arlington' , 'Alexandria' , 'Fairfax' , 'Falls Church']
+del(top_cities[2])
+
+print(top_cities)
+
+del(top_cities[3:])
+
+print(top_cities)

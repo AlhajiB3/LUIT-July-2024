@@ -1,0 +1,5 @@
+book_ratings = [7, 9, 8, 5]
+
+book_ratings.append(10) # Append adds a value to the function. You can see 10 will be the added to the book ratings.
+
+print(book_ratings) 
