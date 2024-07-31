@@ -14,3 +14,7 @@ print(user_data)
 
 numbers = (0, 1) * 10
 print(numbers)
+
+male_name = (Alhaji, Mohamed)
+
+berlin_temps (113.0, 17.5, 12.0)
