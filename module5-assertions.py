@@ -3,3 +3,4 @@ def calculate_inverse(number):
     return 1/number
 
 calculate_inverse(0)
+lllllg
