@@ -22,4 +22,4 @@ def get_user(user_info):
 print('Hi, I will collect some info about your bday!')
 user_info = []
 get_user(user_info)
-lll
+llld
