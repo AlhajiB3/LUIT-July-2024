@@ -6,3 +6,7 @@ if user_name == '':
     sys.exit()
 print('Hello', user_name)
 print('Let us get started...')
+
+
+programming_languages = ["Java", "Python", "C++"]
+
