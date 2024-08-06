@@ -1,0 +1,16 @@
+import boto3
+
+# Initialize a session using Amazon S3
+s3 = boto3.client('s3')
+
+# Generate a presigned URL for the S3 object
+try:
+    response = s3.generate_presigned_url(
+        'get_object',
+        Params={'Bucket': 'my-new-bucket-name-2024', 'Key': 'test_upload.py'},
+        ExpiresIn=300
+    )
+    print(response)
+except Exception as e:
+    print(f'Error: {e}')
+
