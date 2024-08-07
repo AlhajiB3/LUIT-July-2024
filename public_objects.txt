@@ -37,4 +37,6 @@ response = s3.put_object_acl(ACL='public-read',
                                 Bucket=bucket, 
                                 Key=key)
                                 
+
+# Print the response
 print(response)
