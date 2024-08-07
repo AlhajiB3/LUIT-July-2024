@@ -1,0 +1,36 @@
+import boto3
+from botocore.exceptions import BotoCoreError, ClientError
+
+# Define the route table ID and internet gateway ID
+route_table_id = "rtb-0022d08bba129c87b"
+internet_gateway_id = "igw-0f91ffb69d289cc87"
+
+# Initialize the EC2 client
+ec2 = boto3.client('ec2')
+
+try:
+    # Describe the route table to get the VPC ID
+    route_table_response = ec2.describe_route_tables(RouteTableIds=[route_table_id])
+    route_table_vpc_id = route_table_response['RouteTables'][0]['VpcId']
+
+    # Describe the internet gateway to get the VPC ID
+    internet_gateway_response = ec2.describe_internet_gateways(InternetGatewayIds=[internet_gateway_id])
+    internet_gateway_vpc_id = internet_gateway_response['InternetGateways'][0]['Attachments'][0]['VpcId']
+
+    print("Route Table VPC ID:", route_table_vpc_id)
+    print("Internet Gateway VPC ID:", internet_gateway_vpc_id)
+
+    # Check if both VPC IDs match
+    if route_table_vpc_id != internet_gateway_vpc_id:
+        raise ValueError("Route table and internet gateway belong to different VPCs.")
+
+    # Create a route in the specified route table
+    response = ec2.create_route(
+        DestinationCidrBlock='0.0.0.0/0',
+        GatewayId=internet_gateway_id,
+        RouteTableId=route_table_id,
+    )
+    print("Route created successfully:", response)
+except (BotoCoreError, ClientError, ValueError) as error:
+    print(f"An error occurred: {error}")
+
