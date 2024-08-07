@@ -14,4 +14,3 @@ try:
 
 except (BotoCoreError, ClientError) as error:
     print(f"An error occurred: {error}")
-
