@@ -33,4 +33,3 @@ try:
     print("Route created successfully:", response)
 except (BotoCoreError, ClientError, ValueError) as error:
     print(f"An error occurred: {error}")
-
